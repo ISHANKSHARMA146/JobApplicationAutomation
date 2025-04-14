@@ -1,0 +1,14 @@
+selenium
+opencv-python
+pytesseract
+pillow
+numpy
+openai
+pyyaml
+pyautogui
+pytest
+python-dotenv
+requests
+webdriver-manager
+loguru
+retry 

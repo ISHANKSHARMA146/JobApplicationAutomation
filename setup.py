@@ -1,0 +1,37 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="job_application_automation",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        "selenium",
+        "opencv-python",
+        "pytesseract",
+        "pillow",
+        "numpy",
+        "openai",
+        "pyyaml",
+        "pyautogui",
+        "pytest",
+        "python-dotenv",
+        "requests",
+        "webdriver-manager",
+        "loguru",
+        "retry",
+    ],
+    author="Your Name",
+    author_email="your.email@example.com",
+    description="AI-driven job application automation system for Naukri.com",
+    keywords="job, automation, selenium, ai, llm, ocr",
+    url="https://github.com/yourusername/job-application-automation",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+    ],
+    python_requires=">=3.8",
+) 

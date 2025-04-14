@@ -1,0 +1,54 @@
+# Naukri.com Credentials
+credentials:
+  username: "ishankofficial@gmail.com"
+  password: "Ishu9891"
+
+# File Paths
+files:
+  resume_path: "Ishank_Sharma_Resume_Software_engineer.pdf"
+  log_directory: "logs/"
+  screenshot_directory: "screenshots/"
+
+# Browser Settings
+browser:
+  type: "chrome"  # or "firefox"
+  headless: false  # set to true for production
+  timeout: 30  # seconds
+  arguments: ["--disable-gpu", "--disable-web-security", "--enable-webgl", "--enable-unsafe-swiftshader"]
+
+# Tesseract OCR Configuration
+ocr:
+  tesseract_path: "C:/Program Files/Tesseract-OCR/tesseract.exe"  # Update with your path
+  language: "eng"
+
+# LLM API Configuration
+llm:
+  provider: "openai"  # or "azure" or other providers
+  api_key: "sk-proj-JduKV9dsCTst0OxpTwdGT3BlbkFJb8XdwuussCG3wwGU6dSN"
+  model: "gpt-4o-mini"
+  max_tokens: 1000
+  temperature: 0.7
+
+# Job Search Criteria
+job_criteria:
+  keywords: ["python", "software engineer", "developer"]
+  experience: "1-2 years"
+  locations: ["Bangalore", "Mumbai", "Delhi", "Remote"]
+  exclude_terms: ["senior", "principal", "manager"]
+  max_applications_per_session: 10
+  direct_url: "https://www.naukri.com/aiml-jobs-in-india?k=aiml&l=india&experience=0&qproductJobSource=2&naukriCampus=true&experience=0&nignbevent_src=jobsearchDeskGNB"
+  use_direct_url: true  # Use direct URL instead of search interface
+
+# Application Preferences
+application:
+  cover_letter: true
+  auto_fill_questions: true
+  max_retries: 3
+  timeout: 30  # Increase from default
+  retry_attempts: 5
+  delay_between_actions: 3.0  # Increase delay
+  search_interaction:
+    use_search_bar: true
+    click_search_first: true
+    wait_for_expanded: 3
+  skip_resume_upload: true  # Skip resume upload since it's already saved 
